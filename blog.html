@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | ampiUP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="view-transition" content="same-origin" />
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 backdrop-blur-md bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-3xl font-bold text-blue-500">ampiUP</a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-blue-500 transition-colors">Inicio</a>
+                    <a href="blog.html" class="text-blue-500">Blog</a>
+                    
+                    <!-- Theme toggle button -->
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="pt-32 pb-16 px-6">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6" style="view-transition-name: page-title">Blog de ampiUP</h1>
+            <p class="text-xl text-gray-600 dark:text-gray-400">Descubre las últimas novedades sobre automatización, IA y transformación digital</p>
+        </div>
+    </header>
+
+    <!-- Blog Grid -->
+    <main class="container mx-auto px-6 pb-20" style="view-transition-name: main-content">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Blog cards -->
+            <article class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                <a href="blog/ia-transformacion-digital.html" class="block" data-article-link>
+                    <img src="https://via.placeholder.com/600x400" alt="IA en la transformación digital" class="w-full h-48 object-cover" style="view-transition-name: article-1-image">
+                    <div class="p-6">
+                        <span class="text-blue-500 text-sm font-semibold">Tendencias</span>
+                        <h2 class="text-xl font-bold mt-2 mb-3" style="view-transition-name: article-1-title">IA en la Transformación Digital: El Futuro es Ahora</h2>
+                        <p class="text-gray-600 dark:text-gray-400">Descubre cómo la IA está revolucionando la transformación digital de las empresas...</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                <a href="blog/automatizacion-procesos.html" class="block" data-article-link>
+                    <img src="https://via.placeholder.com/600x400" alt="Automatización de procesos" class="w-full h-48 object-cover" style="view-transition-name: article-2-image">
+                    <div class="p-6">
+                        <span class="text-blue-500 text-sm font-semibold">Guías</span>
+                        <h2 class="text-xl font-bold mt-2 mb-3" style="view-transition-name: article-2-title">Guía Definitiva de Automatización de Procesos</h2>
+                        <p class="text-gray-600 dark:text-gray-400">Una guía paso a paso para implementar automatización en tu empresa...</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                <a href="blog/casos-exito.html" class="block" data-article-link>
+                    <img src="https://via.placeholder.com/600x400" alt="Casos de éxito" class="w-full h-48 object-cover" style="view-transition-name: article-3-image">
+                    <div class="p-6">
+                        <span class="text-blue-500 text-sm font-semibold">Casos de Éxito</span>
+                        <h2 class="text-xl font-bold mt-2 mb-3" style="view-transition-name: article-3-title">Casos de Éxito: Transformación Digital</h2>
+                        <p class="text-gray-600 dark:text-gray-400">Conoce cómo empresas líderes han transformado sus operaciones...</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </main>
+
+    <footer class="bg-gray-100 dark:bg-gray-800 py-12">
+        <div class="container mx-auto px-6 text-center text-gray-600 dark:text-gray-400">
+            <p>&copy; 2025 ampiUP. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>
