@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos de Servicio - ampiUP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 backdrop-blur-md bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-3xl font-bold text-blue-500">ampiUP</a>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                    </svg>
+                </button>
+
+                <!-- Desktop menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#inicio" class="hover:text-blue-500 transition-colors">Inicio</a>
+                    <a href="index.html#servicios" class="hover:text-blue-500 transition-colors">Servicios</a>
+                    <a href="index.html#proceso" class="hover:text-blue-500 transition-colors">Proceso</a>
+                    <a href="index.html#contacto" class="hover:text-blue-500 transition-colors">Contacto</a>
+                    <a href="blog.html" class="hover:text-blue-500 transition-colors">Blog</a>
+                    
+                    <!-- Theme toggle button -->
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html#inicio" class="hover:text-blue-500 transition-colors">Inicio</a>
+                    <a href="index.html#servicios" class="hover:text-blue-500 transition-colors">Servicios</a>
+                    <a href="index.html#proceso" class="hover:text-blue-500 transition-colors">Proceso</a>
+                    <a href="index.html#contacto" class="hover:text-blue-500 transition-colors">Contacto</a>
+                    <a href="blog.html" class="hover:text-blue-500 transition-colors">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="pt-24 pb-16 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">Términos de Servicio</h1>
+                <p class="text-gray-500 dark:text-gray-400 mb-8 pb-6 border-b border-gray-200 dark:border-gray-700">Última actualización: 24 de octubre de 2025</p>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">1. Aceptación de los Términos</h2>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">Bienvenido a ampiUP. Al acceder y utilizar nuestro sitio web y servicios, usted acepta estar sujeto a estos Términos de Servicio. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar nuestros servicios.</p>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Nos reservamos el derecho de modificar estos términos en cualquier momento. Su uso continuado de nuestros servicios después de cualquier cambio constituye su aceptación de los nuevos términos.</p>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">2. Descripción de Servicios</h2>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">ampiUP proporciona servicios de consultoría en transformación digital, incluyendo pero no limitado a:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                        <li>Consultoría estratégica en transformación digital</li>
+                        <li>Implementación de soluciones de inteligencia artificial</li>
+                        <li>Desarrollo de chatbots personalizados</li>
+                        <li>Automatización de procesos empresariales</li>
+                        <li>Capacitación y formación en tecnologías digitales</li>
+                        <li>Análisis de datos y business intelligence</li>
+                    </ul>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Nos reservamos el derecho de modificar, suspender o discontinuar cualquier aspecto de nuestros servicios en cualquier momento.</p>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">3. Registro y Cuenta de Usuario</h2>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">3.1 Creación de Cuenta</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">Para acceder a ciertos servicios, puede ser necesario crear una cuenta. Usted se compromete a:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
+                        <li>Proporcionar información precisa, actual y completa</li>
+                        <li>Mantener actualizada su información de cuenta</li>
+                        <li>Mantener la confidencialidad de su contraseña</li>
+                        <li>Notificarnos inmediatamente sobre cualquier uso no autorizado</li>
+                        <li>No compartir su cuenta con terceros</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">3.2 Responsabilidad de la Cuenta</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Usted es responsable de todas las actividades que ocurran bajo su cuenta. ampiUP no será responsable de ninguna pérdida o daño resultante del uso no autorizado de su cuenta.</p>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">4. Uso Aceptable</h2>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">4.1 Conducta Permitida</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Usted acepta utilizar nuestros servicios únicamente para fines legítimos y profesionales.</p>
+
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">4.2 Conducta Prohibida</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">Está estrictamente prohibido:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>Violar cualquier ley o regulación aplicable</li>
+                        <li>Infringir los derechos de propiedad intelectual de terceros</li>
+                        <li>Transmitir contenido difamatorio, obsceno o ilegal</li>
+                        <li>Distribuir virus, malware o código malicioso</li>
+                        <li>Intentar acceder sin autorización a nuestros sistemas</li>
+                        <li>Realizar ingeniería inversa de nuestros servicios</li>
+                        <li>Utilizar nuestros servicios para competir con nosotros</li>
+                        <li>Realizar actividades de scraping o recopilación automatizada de datos</li>
+                        <li>Hacerse pasar por otra persona o entidad</li>
+                    </ul>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">5. Propiedad Intelectual</h2>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">5.1 Derechos de ampiUP</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Todo el contenido, diseño, código, logos, marcas comerciales y materiales en nuestro sitio web son propiedad de ampiUP o de nuestros licenciantes y están protegidos por leyes de propiedad intelectual.</p>
+
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">5.2 Licencia de Uso</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Le otorgamos una licencia limitada, no exclusiva, no transferible y revocable para acceder y usar nuestros servicios únicamente para sus fines comerciales internos.</p>
+
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">5.3 Contenido del Cliente</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Usted retiene todos los derechos sobre el contenido que nos proporciona. Al proporcionarnos contenido, nos otorga una licencia mundial, libre de regalías para usar, modificar y procesar dicho contenido con el fin de proporcionar nuestros servicios.</p>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">6. Servicios de Consultoría</h2>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">6.1 Alcance del Trabajo</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">Los servicios de consultoría específicos serán definidos en un Acuerdo de Servicio o Propuesta separada que detallará:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
+                        <li>Alcance del proyecto</li>
+                        <li>Entregables específicos</li>
+                        <li>Cronograma</li>
+                        <li>Tarifas y condiciones de pago</li>
+                        <li>Términos adicionales específicos del proyecto</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">6.2 Responsabilidades del Cliente</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">El cliente se compromete a:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>Proporcionar información precisa y oportuna</li>
+                        <li>Designar un punto de contacto autorizado</li>
+                        <li>Proporcionar acceso necesario a sistemas y datos</li>
+                        <li>Revisar y aprobar entregables en tiempos acordados</li>
+                        <li>Pagar las tarifas acordadas según lo establecido</li>
+                    </ul>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">7. Tarifas y Pagos</h2>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">7.1 Estructura de Precios</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Las tarifas por nuestros servicios se especificarán en la propuesta o acuerdo de servicio correspondiente. Nos reservamos el derecho de modificar nuestras tarifas con previo aviso.</p>
+
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">7.2 Términos de Pago</h3>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
+                        <li>Los pagos deben realizarse según los términos acordados</li>
+                        <li>Los pagos atrasados pueden estar sujetos a cargos por mora</li>
+                        <li>Podemos suspender servicios por falta de pago</li>
+                        <li>Todos los precios están sujetos a impuestos aplicables</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">7.3 Reembolsos</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Las políticas de reembolso se especificarán en el acuerdo de servicio individual. Generalmente, los servicios de consultoría no son reembolsables una vez iniciados.</p>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">8. Confidencialidad</h2>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">Ambas partes acuerdan mantener confidencial cualquier información sensible intercambiada durante la prestación de servicios. Esto incluye:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                        <li>Información comercial y financiera</li>
+                        <li>Secretos comerciales y know-how</li>
+                        <li>Datos de clientes y usuarios</li>
+                        <li>Estrategias de negocio y planes</li>
+                        <li>Información técnica y de sistemas</li>
+                    </ul>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Esta obligación permanecerá vigente durante y después de la finalización de nuestros servicios.</p>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">9. Garantías y Limitación de Responsabilidad</h2>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">9.1 Garantías</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">Proporcionaremos nuestros servicios con cuidado profesional razonable. Sin embargo, no garantizamos:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
+                        <li>Resultados comerciales específicos</li>
+                        <li>Funcionamiento ininterrumpido de soluciones</li>
+                        <li>Compatibilidad con todos los sistemas</li>
+                        <li>Ausencia total de errores</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">9.2 Limitación de Responsabilidad</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4 font-semibold">EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>No seremos responsables de daños indirectos, incidentales o consecuentes</li>
+                        <li>Nuestra responsabilidad total no excederá las tarifas pagadas por el servicio específico</li>
+                        <li>No somos responsables de pérdidas de datos, ingresos o beneficios</li>
+                        <li>No somos responsables de acciones de terceros</li>
+                    </ul>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">10. Indemnización</h2>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">Usted acepta indemnizar y mantener indemne a ampiUP, sus directores, empleados y socios de cualquier reclamación, pérdida, responsabilidad o gasto que surja de:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>Su uso de nuestros servicios</li>
+                        <li>Violación de estos términos</li>
+                        <li>Violación de derechos de terceros</li>
+                        <li>Información o contenido que nos proporcione</li>
+                    </ul>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">11. Terminación</h2>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">11.1 Terminación por Cualquier Parte</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Cualquier parte puede terminar el servicio según los términos del acuerdo específico, generalmente con notificación previa por escrito.</p>
+
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">11.2 Terminación Inmediata</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">Podemos terminar o suspender su acceso inmediatamente si:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
+                        <li>Viola estos términos</li>
+                        <li>No realiza los pagos acordados</li>
+                        <li>Su conducta pone en riesgo nuestra reputación o operaciones</li>
+                        <li>Es requerido por ley</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">11.3 Efectos de la Terminación</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">Tras la terminación:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>Cesarán todos los derechos de acceso a nuestros servicios</li>
+                        <li>Permanecerán vigentes las obligaciones de pago pendientes</li>
+                        <li>Continuarán las obligaciones de confidencialidad</li>
+                        <li>Devolveremos o destruiremos la información confidencial según lo acordado</li>
+                    </ul>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">12. Fuerza Mayor</h2>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">No seremos responsables por retrasos o incumplimientos debido a circunstancias fuera de nuestro control razonable, incluyendo desastres naturales, guerras, pandemias, fallas de infraestructura de internet, o acciones gubernamentales.</p>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">13. Ley Aplicable y Jurisdicción</h2>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Estos términos se regirán e interpretarán de acuerdo con las leyes de México. Cualquier disputa se resolverá en los tribunales competentes de [Ciudad/Estado].</p>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">14. Resolución de Disputas</h2>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">En caso de cualquier disputa, ambas partes acuerdan primero intentar resolver el asunto mediante negociación de buena fe. Si no se resuelve en 30 días, las partes pueden proceder con mediación antes de iniciar cualquier acción legal.</p>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">15. Disposiciones Generales</h2>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">15.1 Acuerdo Completo</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Estos términos, junto con cualquier acuerdo de servicio específico, constituyen el acuerdo completo entre las partes.</p>
+
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">15.2 Divisibilidad</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Si alguna disposición se considera inválida, las disposiciones restantes permanecerán en pleno vigor.</p>
+
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">15.3 Renuncia</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">La falta de ejercicio de cualquier derecho no constituye una renuncia a ese derecho.</p>
+
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">15.4 Cesión</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">No puede ceder estos términos sin nuestro consentimiento previo por escrito.</p>
+
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">15.5 Notificaciones</h3>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Todas las notificaciones deben enviarse por escrito a las direcciones especificadas en el acuerdo de servicio.</p>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">16. Contacto</h2>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">Para preguntas sobre estos Términos de Servicio, contáctenos:</p>
+                    <ul class="list-none space-y-2 text-gray-700 dark:text-gray-300">
+                        <li><strong class="text-gray-900 dark:text-white">Email:</strong> legal@ampiup.com</li>
+                        <li><strong class="text-gray-900 dark:text-white">Teléfono:</strong> +52 (XX) XXXX-XXXX</li>
+                        <li><strong class="text-gray-900 dark:text-white">Dirección:</strong> [Dirección de la empresa]</li>
+                    </ul>
+                </section>
+
+                <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 rounded-r-lg">
+                    <p class="text-blue-900 dark:text-blue-200 font-medium"><strong>Al utilizar nuestros servicios, usted reconoce que ha leído, entendido y acepta estar sujeto a estos Términos de Servicio.</strong></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800/30 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="text-2xl font-bold text-blue-500 mb-4">ampiUP</div>
+                    <p class="text-gray-400 text-sm">Transformamos empresas a través de la innovación tecnológica y la inteligencia artificial.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Enlaces</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html#servicios" class="hover:text-blue-500 transition-colors">Servicios</a></li>
+                        <li><a href="index.html#proceso" class="hover:text-blue-500 transition-colors">Proceso</a></li>
+                        <li><a href="blog.html" class="hover:text-blue-500 transition-colors">Blog</a></li>
+                        <li><a href="index.html#contacto" class="hover:text-blue-500 transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="policies.html" class="hover:text-blue-500 transition-colors">Políticas de Privacidad</a></li>
+                        <li><a href="terms-service.html" class="hover:text-blue-500 transition-colors">Términos de Servicio</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors" aria-label="LinkedIn">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors" aria-label="Twitter">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors" aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 ampiUP. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
