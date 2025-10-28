@@ -1,0 +1,297 @@
+<!-- ==========================================================================
+     CORRECCIONES HTML - Meta Tags y Elementos Funcionales
+     ========================================================================== -->
+
+<!-- 
+    ARCHIVO: index.html
+    SECCIÓN: <head>
+    ACCIÓN: Agregar estos meta tags después de la línea 5
+-->
+
+<!-- Meta Description (CRÍTICO para SEO) -->
+<meta name="description" content="ampiUP - Transformamos tu negocio con soluciones de automatización inteligente impulsadas por IA. Optimiza procesos, reduce costos y aumenta la productividad.">
+
+<!-- Meta Keywords -->
+<meta name="keywords" content="automatización, inteligencia artificial, IA, transformación digital, chatbots, optimización de procesos, análisis de datos, business intelligence">
+
+<!-- Meta Author -->
+<meta name="author" content="ampiUP">
+
+<!-- Robots -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<!-- Canonical URL (CAMBIAR tudominio.com por tu dominio real) -->
+<link rel="canonical" href="https://tudominio.com/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tudominio.com/">
+<meta property="og:title" content="ampiUP - Automatización Inteligente y Procesos">
+<meta property="og:description" content="Transformamos tu negocio con soluciones de automatización impulsadas por IA. Optimiza procesos, reduce costos y aumenta la productividad.">
+<meta property="og:image" content="https://tudominio.com/images/og-image.jpg">
+<meta property="og:site_name" content="ampiUP">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://tudominio.com/">
+<meta name="twitter:title" content="ampiUP - Automatización Inteligente y Procesos">
+<meta name="twitter:description" content="Transformamos tu negocio con soluciones de automatización impulsadas por IA.">
+<meta name="twitter:image" content="https://tudominio.com/images/twitter-image.jpg">
+<meta name="twitter:creator" content="@ampiup">
+
+<!-- Favicon (Agregar tu favicon) -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<!-- Structured Data (Schema.org) - Agregar antes de </head> -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ampiUP",
+    "url": "https://tudominio.com",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://tudominio.com/images/logo.png"
+    },
+    "description": "Soluciones de automatización inteligente y transformación digital para empresas",
+    "foundingDate": "2024",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Sales",
+        "email": "info@ampiup.com",
+        "availableLanguage": ["Spanish", "English"]
+    },
+    "sameAs": [
+        "https://www.linkedin.com/company/ampiup",
+        "https://twitter.com/ampiup",
+        "https://www.facebook.com/ampiup"
+    ],
+    "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "ES"
+    }
+}
+</script>
+
+<!-- Content Security Policy (Opcional pero recomendado) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; img-src 'self' data: https: http:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self';">
+
+<!-- ==========================================================================
+     CORRECCIÓN: Botones sin funcionalidad
+     ========================================================================== -->
+
+<!-- 
+    UBICACIÓN: index.html línea 67
+    ACTUAL: <button class="hidden md:block bg-blue-600...">Empezar ahora</button>
+    CORREGIDO:
+-->
+<a href="#contacto" class="hidden md:block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full transition-colors text-center">
+    Empezar ahora
+</a>
+
+<!-- 
+    UBICACIÓN: index.html líneas 124, 139
+    ACTUAL: <button class="...">Empezar ahora</button>
+    CORREGIDO:
+-->
+<a href="#contacto" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full transition-colors text-white text-center inline-block">
+    Empezar ahora
+</a>
+
+<!-- 
+    UBICACIÓN: index.html línea 130
+    ACTUAL: <button class="bg-blue-600...">Descubre cómo</button>
+    CORREGIDO:
+-->
+<a href="#servicios" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full text-lg transition-colors inline-block">
+    Descubre cómo
+</a>
+
+<!-- 
+    UBICACIÓN: index.html línea 133
+    ACTUAL: <button class="border...">Ver demo</button>
+    CORREGIDO:
+-->
+<a href="#contacto" class="border border-blue-500 hover:bg-blue-500/10 px-8 py-3 rounded-full text-lg transition-colors inline-block">
+    Ver demo
+</a>
+
+<!-- ==========================================================================
+     CORRECCIÓN: Enlaces de redes sociales
+     ========================================================================== -->
+
+<!-- 
+    UBICACIÓN: index.html líneas 238-256 (footer)
+    OPCIÓN 1: Si tienes redes sociales reales
+-->
+<a href="https://www.linkedin.com/company/ampiup" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-500 transition-colors" aria-label="Síguenos en LinkedIn">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+    </svg>
+</a>
+
+<a href="https://twitter.com/ampiup" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-500 transition-colors" aria-label="Síguenos en Twitter">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+    </svg>
+</a>
+
+<a href="https://www.facebook.com/ampiup" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-500 transition-colors" aria-label="Síguenos en Facebook">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+    </svg>
+</a>
+
+<!-- 
+    OPCIÓN 2: Si NO tienes redes sociales, ELIMINAR la sección completa
+    y reemplazar con:
+-->
+<div>
+    <h4 class="text-white font-semibold mb-4">Conecta con nosotros</h4>
+    <p class="text-gray-400 text-sm">
+        <a href="mailto:info@ampiup.com" class="hover:text-blue-500 transition-colors">info@ampiup.com</a>
+    </p>
+</div>
+
+<!-- ==========================================================================
+     CORRECCIÓN: Formulario de contacto
+     ========================================================================== -->
+
+<!-- 
+    UBICACIÓN: index.html líneas 215-220
+    OPCIÓN 1: Usar Formspree (gratis, fácil)
+-->
+<form action="https://formspree.io/f/TU_FORM_ID" method="POST" class="space-y-4">
+    <input type="email" name="email" placeholder="Tu email" required class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none">
+    <input type="hidden" name="_subject" value="Nueva solicitud de demo desde ampiUP">
+    <input type="hidden" name="_next" value="https://tudominio.com/gracias.html">
+    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg transition-colors">
+        Solicitar demo
+    </button>
+</form>
+
+<!-- 
+    OPCIÓN 2: Usar Netlify Forms (si usas Netlify)
+-->
+<form name="contact" method="POST" data-netlify="true" class="space-y-4">
+    <input type="hidden" name="form-name" value="contact">
+    <input type="email" name="email" placeholder="Tu email" required class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none">
+    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg transition-colors">
+        Solicitar demo
+    </button>
+</form>
+
+<!-- 
+    OPCIÓN 3: JavaScript personalizado (necesita backend)
+-->
+<form id="contact-form" class="space-y-4">
+    <input type="email" id="email" name="email" placeholder="Tu email" required class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none">
+    <div id="form-message" class="hidden text-sm"></div>
+    <button type="submit" id="submit-btn" class="w-full bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg transition-colors">
+        Solicitar demo
+    </button>
+</form>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const submitBtn = document.getElementById('submit-btn');
+    const message = document.getElementById('form-message');
+    
+    // Deshabilitar botón durante envío
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+    
+    try {
+        // Enviar a tu API backend
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email })
+        });
+        
+        if (response.ok) {
+            message.className = 'text-green-500 text-sm';
+            message.textContent = '¡Gracias! Te contactaremos pronto.';
+            message.classList.remove('hidden');
+            document.getElementById('email').value = '';
+        } else {
+            throw new Error('Error al enviar');
+        }
+    } catch (error) {
+        message.className = 'text-red-500 text-sm';
+        message.textContent = 'Error al enviar. Por favor, intenta de nuevo.';
+        message.classList.remove('hidden');
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Solicitar demo';
+    }
+});
+</script>
+
+<!-- ==========================================================================
+     META TAGS PARA OTRAS PÁGINAS
+     ========================================================================== -->
+
+<!-- blog.html -->
+<meta name="description" content="Descubre las últimas novedades sobre automatización, inteligencia artificial y transformación digital en el blog de ampiUP. Guías, casos de éxito y tendencias.">
+<link rel="canonical" href="https://tudominio.com/blog.html">
+
+<!-- policies.html -->
+<meta name="description" content="Políticas de Privacidad de ampiUP. Conoce cómo protegemos tus datos personales y garantizamos la seguridad de tu información.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://tudominio.com/policies.html">
+
+<!-- terms-service.html -->
+<meta name="description" content="Términos de Servicio de ampiUP. Lee los términos y condiciones de uso de nuestros servicios de automatización y transformación digital.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://tudominio.com/terms-service.html">
+
+<!-- blog/ia-transformacion-digital.html -->
+<meta name="description" content="Descubre cómo la IA está revolucionando la transformación digital de las empresas. Beneficios, casos de uso y estrategias de implementación.">
+<link rel="canonical" href="https://tudominio.com/blog/ia-transformacion-digital.html">
+<meta property="article:published_time" content="2025-06-22T00:00:00Z">
+<meta property="article:author" content="ampiUP">
+<meta property="article:section" content="Tecnología">
+<meta property="article:tag" content="IA, transformación digital, automatización">
+
+<!-- ==========================================================================
+     CÓDIGO ADICIONAL PARA MEJORAR SEO
+     ========================================================================== -->
+
+<!-- Breadcrumbs (Agregar en páginas internas) -->
+<nav aria-label="breadcrumb" class="container mx-auto px-6 py-4">
+    <ol class="flex space-x-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="/" itemprop="item" class="hover:text-blue-500">
+                <span itemprop="name">Inicio</span>
+            </a>
+            <meta itemprop="position" content="1" />
+        </li>
+        <li class="before:content-['/'] before:mx-2">
+            <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span itemprop="name">Blog</span>
+                <meta itemprop="position" content="2" />
+            </span>
+        </li>
+    </ol>
+</nav>
+
+<!-- robots.txt recomendado (crear en la raíz) -->
+<!--
+User-agent: *
+Allow: /
+
+Sitemap: https://tudominio.com/sitemap.xml
+
+# Bloquear páginas de prueba si las tienes
+Disallow: /test/
+Disallow: /dev/
+-->

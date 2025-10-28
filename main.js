@@ -122,3 +122,44 @@ gsap.to('.animation-container', {
     yoyo: true,
     ease: 'power1.inOut'
 });
+
+// Manejo del formulario de contacto
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const emailInput = document.getElementById('email');
+        const submitBtn = document.getElementById('submit-btn');
+        const message = document.getElementById('form-message');
+        const email = emailInput.value;
+        
+        // Deshabilitar botón durante envío
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Enviando...';
+        
+        try {
+            // Simulación de envío (reemplazar con tu backend real o Formspree)
+            // Para usar Formspree: https://formspree.io/f/TU_FORM_ID
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            // Éxito
+            message.className = 'text-green-400 text-sm text-center';
+            message.textContent = '¡Gracias! Te contactaremos pronto.';
+            message.classList.remove('hidden');
+            emailInput.value = '';
+            
+            // Ocultar mensaje después de 5 segundos
+            setTimeout(() => {
+                message.classList.add('hidden');
+            }, 5000);
+        } catch (error) {
+            message.className = 'text-red-400 text-sm text-center';
+            message.textContent = 'Error al enviar. Por favor, intenta de nuevo.';
+            message.classList.remove('hidden');
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Solicitar demo';
+        }
+    });
+}

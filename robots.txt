@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Permitir indexación de todas las páginas excepto las políticas
+Disallow: /policies.html
+Disallow: /terms-service.html
+
+# Sitemap
+Sitemap: https://ampiup.com/sitemap.xml

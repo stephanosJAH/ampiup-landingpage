@@ -1,3 +1,12 @@
+/* ==========================================================================
+   CORRECCIÓN BLOG.JS - Reemplazar código inseguro
+   ========================================================================== */
+
+// ❌ CÓDIGO ACTUAL (INSEGURO - ELIMINAR)
+// document.body.innerHTML = tempDoc.body.innerHTML;
+
+// ✅ CÓDIGO CORREGIDO (SEGURO - USAR)
+
 // Manejar las transiciones de vista para los enlaces de artículos
 document.addEventListener('DOMContentLoaded', () => {
     const articleLinks = document.querySelectorAll('[data-article-link]');
@@ -27,10 +36,11 @@ async function handleArticleClick(e) {
         // Actualizar el título de la página
         document.title = tempDoc.title;
         
-        // Actualizar el contenido de forma segura
+        // ✅ SOLUCIÓN 1: Actualizar clase del HTML
         document.documentElement.className = tempDoc.documentElement.className;
         
-        // Reemplazar body de forma segura (sin innerHTML)
+        // ✅ SOLUCIÓN 2: Reemplazar body de forma segura
+        // En lugar de innerHTML, usamos replaceChild
         const newBody = document.adoptNode(tempDoc.body);
         document.documentElement.replaceChild(newBody, document.body);
 
