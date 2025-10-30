@@ -24,7 +24,32 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#3b82f6',
+                        primary: {
+                            50: '#f2effd',
+                            100: '#dfd6fa',
+                            200: '#c0adf5',
+                            300: '#a083eb',
+                            400: '#8560e0',
+                            500: '#6d3dd4',
+                            600: '#5a1ac7',
+                            700: '#4A00B7',
+                            800: '#3d0095',
+                            900: '#2d0070',
+                            950: '#1a0042',
+                        },
+                        secondary: {
+                            50: '#fdf5ff',
+                            100: '#f8e0ff',
+                            200: '#f0c3ff',
+                            300: '#e6a0ff',
+                            400: '#dd7dff',
+                            500: '#d45aff',
+                            600: '#c933ff',
+                            700: '#BD00FF',
+                            800: '#9500a0',
+                            900: '#6e006e',
+                            950: '#400042',
+                        }
                     }
                 }
             }
@@ -38,11 +63,11 @@
     <nav class="fixed w-full z-50 backdrop-blur-md bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="index.html" class="text-3xl font-bold text-blue-500">ampiUP</a>
+                <a href="index.html" class="text-3xl font-bold text-primary-700">ampiUP</a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="hover:text-blue-500 transition-colors">Inicio</a>
-                    <a href="blog.html" class="text-blue-500">Blog</a>
+                    <a href="index.html" class="hover:text-primary-700 transition-colors">Inicio</a>
+                    <a href="blog.html" class="text-primary-700">Blog</a>
                     
                     <!-- Theme toggle button -->
                     <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
@@ -74,7 +99,7 @@
                 <a href="blog/ia-transformacion-digital.html" class="block" data-article-link>
                     <img src="https://via.placeholder.com/600x400" alt="IA en la transformación digital" class="w-full h-48 object-cover" style="view-transition-name: article-1-image">
                     <div class="p-6">
-                        <span class="text-blue-500 text-sm font-semibold">Tendencias</span>
+                        <span class="text-primary-700 text-sm font-semibold">Tendencias</span>
                         <h2 class="text-xl font-bold mt-2 mb-3" style="view-transition-name: article-1-title">IA en la Transformación Digital: El Futuro es Ahora</h2>
                         <p class="text-gray-600 dark:text-gray-400">Descubre cómo la IA está revolucionando la transformación digital de las empresas...</p>
                     </div>
@@ -85,7 +110,7 @@
                 <a href="blog/automatizacion-procesos.html" class="block" data-article-link>
                     <img src="https://via.placeholder.com/600x400" alt="Automatización de procesos" class="w-full h-48 object-cover" style="view-transition-name: article-2-image">
                     <div class="p-6">
-                        <span class="text-blue-500 text-sm font-semibold">Guías</span>
+                        <span class="text-primary-700 text-sm font-semibold">Guías</span>
                         <h2 class="text-xl font-bold mt-2 mb-3" style="view-transition-name: article-2-title">Guía Definitiva de Automatización de Procesos</h2>
                         <p class="text-gray-600 dark:text-gray-400">Una guía paso a paso para implementar automatización en tu empresa...</p>
                     </div>
@@ -96,7 +121,7 @@
                 <a href="blog/casos-exito.html" class="block" data-article-link>
                     <img src="https://via.placeholder.com/600x400" alt="Casos de éxito" class="w-full h-48 object-cover" style="view-transition-name: article-3-image">
                     <div class="p-6">
-                        <span class="text-blue-500 text-sm font-semibold">Casos de Éxito</span>
+                        <span class="text-primary-700 text-sm font-semibold">Casos de Éxito</span>
                         <h2 class="text-xl font-bold mt-2 mb-3" style="view-transition-name: article-3-title">Casos de Éxito: Transformación Digital</h2>
                         <p class="text-gray-600 dark:text-gray-400">Conoce cómo empresas líderes han transformado sus operaciones...</p>
                     </div>

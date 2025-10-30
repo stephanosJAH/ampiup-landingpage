@@ -10,7 +10,11 @@
     <meta name="keywords" content="automatización, inteligencia artificial, IA, transformación digital, chatbots, optimización de procesos, análisis de datos">
     <meta name="author" content="ampiUP">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    
+
+    <!-- Icono de sitio -->
+    <!-- <link rel="icon" type="image/svg+xml" href="img/logo.svg"> -->
+    <link rel="alternate icon" type="image/png" href="img/favicon.png">
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://ampiup.com/">
     
@@ -35,7 +39,38 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#3b82f6',
+                        primary: {
+                            50: '#f2effd',
+                            100: '#dfd6fa',
+                            200: '#c0adf5',
+                            300: '#a083eb',
+                            400: '#8560e0',
+                            500: '#6d3dd4',
+                            600: '#5a1ac7',
+                            700: '#4A00B7',
+                            800: '#3d0095',
+                            900: '#2d0070',
+                            950: '#1a0042',
+                        },
+                        secondary: {
+                            50: '#fdf5ff',
+                            100: '#f8e0ff',
+                            200: '#f0c3ff',
+                            300: '#e6a0ff',
+                            400: '#dd7dff',
+                            500: '#d45aff',
+                            600: '#c933ff',
+                            700: '#BD00FF',
+                            800: '#9500a0',
+                            900: '#6e006e',
+                            950: '#400042',
+                        },
+                        accent: {
+                            cyan: '#06b6d4',
+                            success: '#22c55e',
+                            warning: '#f59e0b',
+                            error: '#ef4444',
+                        }
                     }
                 }
             }
@@ -66,12 +101,12 @@
     }
     </script>
 </head>
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+<body class="text-gray-900 dark:text-white transition-colors duration-300">
     <!-- Navbar -->
     <nav class="fixed w-full z-50 backdrop-blur-md bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-3xl font-bold text-blue-500">ampiUP</div>
+                <div class="text-3xl font-bold text-primary-700 dark:text-secondary-700">ampiUP</div>
                 
                 <!-- Mobile menu button -->
                 <button id="mobile-menu-button" class="md:hidden text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
@@ -81,11 +116,11 @@
                 </button>
 
                 <!-- Desktop menu -->                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#inicio" class="hover:text-blue-500 transition-colors">Inicio</a>
-                    <a href="#servicios" class="hover:text-blue-500 transition-colors">Servicios</a>
-                    <a href="#proceso" class="hover:text-blue-500 transition-colors">Proceso</a>
-                    <a href="#contacto" class="hover:text-blue-500 transition-colors">Contacto</a>
-                    <a href="blog.html" class="hover:text-blue-500 transition-colors">Blog</a>
+                    <a href="#inicio" class="hover:text-primary-700 dark:hover:text-secondary-700 transition-colors font-medium">Inicio</a>
+                    <a href="#servicios" class="hover:text-primary-700 dark:hover:text-secondary-700 transition-colors font-medium">Servicios</a>
+                    <a href="#proceso" class="hover:text-primary-700 dark:hover:text-secondary-700 transition-colors font-medium">Proceso</a>
+                    <a href="#contacto" class="hover:text-primary-700 dark:hover:text-secondary-700 transition-colors font-medium">Contacto</a>
+                    <!-- <a href="blog.html" class="hover:text-primary-700 dark:hover:text-secondary-700 transition-colors font-medium">Blog</a> -->
                     
                     <!-- Theme toggle button -->
                     <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
@@ -100,7 +135,7 @@
                     </button>
                 </div>
 
-                <a href="#contacto" class="hidden md:block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full transition-colors text-center">
+                <a href="#contacto" class="hidden md:block bg-gradient-to-r from-primary-700 to-secondary-700 hover:from-primary-600 hover:to-secondary-600 text-white px-6 py-2 rounded-full transition-all shadow-lg hover:shadow-xl text-center font-semibold">
                     Empezar ahora
                 </a>
             </div>
@@ -113,24 +148,24 @@
         <div class="fixed right-0 top-0 w-64 h-full bg-white dark:bg-gray-800 shadow-lg transform transition-transform duration-300 translate-x-full">
             <div class="p-6 space-y-6">
                 <div class="flex justify-between items-center">
-                    <span class="text-xl font-bold text-blue-500">Menú</span>
+                    <span class="text-xl font-bold text-primary-700 dark:text-secondary-700">Menú</span>
                     <button id="close-mobile-menu" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
                 </div>                <div class="flex flex-col space-y-4">
-                    <a href="#inicio" class="hover:text-blue-500 transition-colors">Inicio</a>
-                    <a href="#servicios" class="hover:text-blue-500 transition-colors">Servicios</a>
-                    <a href="#proceso" class="hover:text-blue-500 transition-colors">Proceso</a>
-                    <a href="#contacto" class="hover:text-blue-500 transition-colors">Contacto</a>
-                    <a href="blog.html" class="hover:text-blue-500 transition-colors">Blog</a>
+                    <a href="#inicio" class="hover:text-primary-700 dark:hover:text-secondary-700 transition-colors font-medium">Inicio</a>
+                    <a href="#servicios" class="hover:text-primary-700 dark:hover:text-secondary-700 transition-colors font-medium">Servicios</a>
+                    <a href="#proceso" class="hover:text-primary-700 dark:hover:text-secondary-700 transition-colors font-medium">Proceso</a>
+                    <a href="#contacto" class="hover:text-primary-700 dark:hover:text-secondary-700 transition-colors font-medium">Contacto</a>
+                    <a href="blog.html" class="hover:text-primary-700 dark:hover:text-secondary-700 transition-colors font-medium">Blog</a>
                 </div>
                 <div class="space-y-3">
-                    <a href="#contacto" class="block w-full bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full transition-colors text-white text-center">
+                    <a href="#contacto" class="block w-full bg-gradient-to-r from-primary-700 to-secondary-700 hover:from-primary-600 hover:to-secondary-600 px-6 py-2 rounded-full transition-all text-white text-center font-semibold shadow-lg">
                         Empezar ahora
                     </a>
-                    <a href="blog.html" class="block w-full text-center border border-blue-500 hover:bg-blue-500/10 px-6 py-2 rounded-full transition-colors">
+                    <a href="blog.html" class="block w-full text-center border-2 border-primary-700 dark:border-secondary-700 text-primary-700 dark:text-secondary-700 hover:bg-primary-700 dark:hover:bg-secondary-700 hover:text-white px-6 py-2 rounded-full transition-all font-semibold">
                         Explorar Blog
                     </a>
                 </div>
@@ -139,24 +174,25 @@
     </div>
 
     <!-- Hero Section -->
-    <section id="inicio" class="min-h-screen flex items-center pt-20">
+    <section id="inicio" class="min-h-screen flex items-center justify-center pt-20">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-8">
                     <h1 class="text-5xl md:text-7xl font-bold leading-tight">
-                        Tu aliado en <span class="text-blue-500">automatización</span> inteligente
+                        Tu aliado en <span class="text-primary-700 dark:text-secondary-700">automatización</span> inteligente
                     </h1>
-                    <p class="text-xl text-gray-400">
+                    <p class="text-xl text-gray-600 dark:text-gray-300">
                         Transformamos tu negocio con soluciones de automatización impulsadas por IA. 
                         Optimiza procesos, reduce costos y aumenta la productividad.
-                    </p>                    <div class="flex flex-wrap gap-4">
-                        <a href="#servicios" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full text-lg transition-colors inline-block">
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#servicios" class="bg-gradient-to-r from-primary-700 to-secondary-700 hover:from-primary-600 hover:to-secondary-600 text-white px-8 py-3 rounded-full text-lg transition-all shadow-lg hover:shadow-xl inline-block font-semibold">
                             Descubre cómo
                         </a>
-                        <a href="#contacto" class="border border-blue-500 hover:bg-blue-500/10 px-8 py-3 rounded-full text-lg transition-colors inline-block">
+                        <a href="#contacto" class="border-2 border-primary-700 dark:border-secondary-700 text-primary-700 dark:text-secondary-700 hover:bg-primary-700 hover:text-white dark:hover:bg-secondary-700 dark:hover:text-white px-8 py-3 rounded-full text-lg transition-all inline-block font-semibold">
                             Ver demo
                         </a>
-                        <a href="blog.html" class="inline-flex items-center space-x-2 text-blue-500 hover:text-blue-600 transition-colors">
+                        <a href="blog.html" class="inline-flex items-center space-x-2 text-primary-700 dark:text-secondary-700 hover:text-primary-600 dark:hover:text-secondary-600 transition-colors font-semibold">
                             <span>Explora nuestro blog</span>
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
@@ -172,70 +208,70 @@
     </section>
 
     <!-- Servicios Section -->
-    <section id="servicios" class="py-20">
+    <section id="servicios" class="min-h-screen flex items-center justify-center py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-16">Nuestros Servicios</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="service-card p-8 rounded-xl bg-gray-800/50 hover:bg-gray-800 transition-all">
-                    <div class="text-blue-500 text-5xl mb-4">🤖</div>
+                <div class="service-card p-8 rounded-xl bg-gray-50 dark:bg-gray-800/50 hover:bg-gray-100 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all">
+                    <div class="text-primary-700 dark:text-secondary-700 text-5xl mb-4">🤖</div>
                     <h3 class="text-2xl font-bold mb-4">Automatización de Procesos</h3>
-                    <p class="text-gray-400">Optimiza tus flujos de trabajo con soluciones inteligentes que eliminan tareas repetitivas.</p>
+                    <p class="text-gray-600 dark:text-gray-300">Optimiza tus flujos de trabajo con soluciones inteligentes que eliminan tareas repetitivas.</p>
                 </div>
-                <div class="service-card p-8 rounded-xl bg-gray-800/50 hover:bg-gray-800 transition-all">
-                    <div class="text-blue-500 text-5xl mb-4">🎯</div>
+                <div class="service-card p-8 rounded-xl bg-gray-50 dark:bg-gray-800/50 hover:bg-gray-100 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all">
+                    <div class="text-primary-700 dark:text-secondary-700 text-5xl mb-4">🎯</div>
                     <h3 class="text-2xl font-bold mb-4">Integración de IA</h3>
-                    <p class="text-gray-400">Implementamos soluciones de IA personalizadas para potenciar tu negocio.</p>
+                    <p class="text-gray-600 dark:text-gray-300">Implementamos soluciones de IA personalizadas para potenciar tu negocio.</p>
                 </div>
-                <div class="service-card p-8 rounded-xl bg-gray-800/50 hover:bg-gray-800 transition-all">
-                    <div class="text-blue-500 text-5xl mb-4">📊</div>
+                <div class="service-card p-8 rounded-xl bg-gray-50 dark:bg-gray-800/50 hover:bg-gray-100 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all">
+                    <div class="text-primary-700 dark:text-secondary-700 text-5xl mb-4">📊</div>
                     <h3 class="text-2xl font-bold mb-4">Análisis de Datos</h3>
-                    <p class="text-gray-400">Convierte tus datos en insights accionables con nuestras herramientas de análisis.</p>
+                    <p class="text-gray-600 dark:text-gray-300">Convierte tus datos en insights accionables con nuestras herramientas de análisis.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Proceso Section -->
-    <section id="proceso" class="py-20 bg-gray-800/30">
+    <section id="proceso" class="min-h-screen flex items-center justify-center py-20 bg-gray-100 dark:bg-gray-800/30">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-16">Nuestro Proceso</h2>
             <div class="grid md:grid-cols-4 gap-8">
                 <div class="process-step text-center">
                     <div class="step-number mb-4">1</div>
                     <h3 class="text-xl font-bold mb-2">Análisis</h3>
-                    <p class="text-gray-400">Evaluamos tus necesidades y procesos actuales</p>
+                    <p class="text-gray-600 dark:text-gray-300">Evaluamos tus necesidades y procesos actuales</p>
                 </div>
                 <div class="process-step text-center">
                     <div class="step-number mb-4">2</div>
                     <h3 class="text-xl font-bold mb-2">Diseño</h3>
-                    <p class="text-gray-400">Creamos una solución personalizada</p>
+                    <p class="text-gray-600 dark:text-gray-300">Creamos una solución personalizada</p>
                 </div>
                 <div class="process-step text-center">
                     <div class="step-number mb-4">3</div>
                     <h3 class="text-xl font-bold mb-2">Implementación</h3>
-                    <p class="text-gray-400">Integramos la solución en tu negocio</p>
+                    <p class="text-gray-600 dark:text-gray-300">Integramos la solución en tu negocio</p>
                 </div>
                 <div class="process-step text-center">
                     <div class="step-number mb-4">4</div>
                     <h3 class="text-xl font-bold mb-2">Optimización</h3>
-                    <p class="text-gray-400">Mejoramos continuamente los resultados</p>
+                    <p class="text-gray-600 dark:text-gray-300">Mejoramos continuamente los resultados</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contacto Section -->
-    <section id="contacto" class="py-20">
+    <section id="contacto" class="min-h-screen flex items-center justify-center py-20">
         <div class="container mx-auto px-6">
             <div class="max-w-2xl mx-auto text-center">
                 <h2 class="text-4xl font-bold mb-8">¿Listo para empezar?</h2>
-                <p class="text-xl text-gray-400 mb-8">
+                <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
                     Contacta con nosotros y descubre cómo podemos ayudarte a transformar tu negocio
                 </p>
                 <form id="contact-form" class="space-y-4">
-                    <input type="email" id="email" name="email" placeholder="Tu email" required class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none">
+                    <input type="email" id="email" name="email" placeholder="Tu email" required class="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 focus:border-primary-700 dark:focus:border-secondary-700 focus:outline-none transition-colors">
                     <div id="form-message" class="hidden text-sm text-center"></div>
-                    <button type="submit" id="submit-btn" class="w-full bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg transition-colors">
+                    <button type="submit" id="submit-btn" class="w-full bg-gradient-to-r from-primary-700 to-secondary-700 hover:from-primary-600 hover:to-secondary-600 text-white px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl font-semibold">
                         Solicitar demo
                     </button>
                 </form>
@@ -248,7 +284,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <!-- Columna 1: Marca -->
                 <div>
-                    <div class="text-2xl font-bold text-blue-500 mb-4">ampiUP</div>
+                    <div class="text-2xl font-bold text-primary-700 mb-4">ampiUP</div>
                     <p class="text-gray-400 text-sm">Transformamos empresas a través de la innovación tecnológica y la inteligencia artificial.</p>
                 </div>
                 
@@ -256,10 +292,10 @@
                 <div>
                     <h4 class="text-white font-semibold mb-4">Enlaces</h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="#servicios" class="hover:text-blue-500 transition-colors">Servicios</a></li>
-                        <li><a href="#proceso" class="hover:text-blue-500 transition-colors">Proceso</a></li>
-                        <li><a href="blog.html" class="hover:text-blue-500 transition-colors">Blog</a></li>
-                        <li><a href="#contacto" class="hover:text-blue-500 transition-colors">Contacto</a></li>
+                        <li><a href="#servicios" class="hover:text-primary-700 transition-colors">Servicios</a></li>
+                        <li><a href="#proceso" class="hover:text-primary-700 transition-colors">Proceso</a></li>
+                        <li><a href="blog.html" class="hover:text-primary-700 transition-colors">Blog</a></li>
+                        <li><a href="#contacto" class="hover:text-primary-700 transition-colors">Contacto</a></li>
                     </ul>
                 </div>
                 
@@ -267,8 +303,8 @@
                 <div>
                     <h4 class="text-white font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="policies.html" class="hover:text-blue-500 transition-colors">Políticas de Privacidad</a></li>
-                        <li><a href="terms-service.html" class="hover:text-blue-500 transition-colors">Términos de Servicio</a></li>
+                        <li><a href="policies.html" class="hover:text-primary-700 transition-colors">Políticas de Privacidad</a></li>
+                        <li><a href="terms-service.html" class="hover:text-primary-700 transition-colors">Términos de Servicio</a></li>
                     </ul>
                 </div>
                 
@@ -276,7 +312,7 @@
                 <div>
                     <h4 class="text-white font-semibold mb-4">Contacto</h4>
                     <p class="text-gray-400 text-sm mb-2">
-                        <a href="mailto:info@ampiup.com" class="hover:text-blue-500 transition-colors">
+                        <a href="mailto:info@ampiup.com" class="hover:text-primary-700 transition-colors">
                             info@ampiup.com
                         </a>
                     </p>

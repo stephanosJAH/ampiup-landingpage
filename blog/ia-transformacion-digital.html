@@ -27,7 +27,32 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#3b82f6',
+                        primary: {
+                            50: '#f2effd',
+                            100: '#dfd6fa',
+                            200: '#c0adf5',
+                            300: '#a083eb',
+                            400: '#8560e0',
+                            500: '#6d3dd4',
+                            600: '#5a1ac7',
+                            700: '#4A00B7',
+                            800: '#3d0095',
+                            900: '#2d0070',
+                            950: '#1a0042',
+                        },
+                        secondary: {
+                            50: '#fdf5ff',
+                            100: '#f8e0ff',
+                            200: '#f0c3ff',
+                            300: '#e6a0ff',
+                            400: '#dd7dff',
+                            500: '#d45aff',
+                            600: '#c933ff',
+                            700: '#BD00FF',
+                            800: '#9500a0',
+                            900: '#6e006e',
+                            950: '#400042',
+                        }
                     }
                 }
             }
@@ -41,11 +66,11 @@
     <nav class="fixed w-full z-50 backdrop-blur-md bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="../index.html" class="text-3xl font-bold text-blue-500">ampiUP</a>
+                <a href="../index.html" class="text-3xl font-bold text-primary-700">ampiUP</a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="../index.html" class="hover:text-blue-500 transition-colors">Inicio</a>
-                    <a href="../blog.html" class="hover:text-blue-500 transition-colors">Blog</a>
+                    <a href="../index.html" class="hover:text-primary-700 transition-colors">Inicio</a>
+                    <a href="../blog.html" class="hover:text-primary-700 transition-colors">Blog</a>
                     
                     <!-- Theme toggle button -->
                     <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
